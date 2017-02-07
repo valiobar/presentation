@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Kvaba</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/kvaba.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/menu_elastic.css"/>
+    <!-- Theme used for syntax highlighting of code -->
+    <!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+    <!--[if lte IE 8]>
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <![endif]-->
+
+
+    <script src="js/snap.svg-min.js"></script>
+    <!-- Printing and PDF exports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.5.4/bodymovin.min.js"></script>
+
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+
+    </script>
+</head>
+
+<body>
+<!--Menu Start-->
+<div class="menu-wrap">
+    <nav class="menu">
+        <div class="icon-list">
+            <a class="menu_item" href="#/0"><span>Начало</span></a>
+            <a class="menu_item" href="#/1"><span>Банери</span></a>
+            <a class="menu_item" style="cursor:pointer" onclick=" {
+             Reveal.slide(2);
+               }"><span>Супер банери</span></a>
+            <a class="menu_item" href="#/3"><span>Браузър игри</span></a>
+            <a class="menu_item" href="#/4"><span>Фейсбук</span></a>
+            <a class="menu_item" href="#/5"><span>Уеб страници</span></a>
+            <a class="menu_item" href="#/6"><span>Приложения</span></a>
+            <a class="menu_item" href="#/7"><span>Презентации </span></a>
+            <a class="menu_item" href="#/8"><span>Контакти</span></a>
+        </div>
+    </nav>
+    <button class="close-button" id="close-button">Close Menu</button>
+    <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800"
+             preserveAspectRatio="none">
+            <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+        </svg>
+    </div>
+</div>
+<button class="menu-button" id="open-button">Open Menu</button>
+<!--Menu End-->
+<!--Start Slider-->
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <img id="logo" class="imgNoBorder" src="assets/img/stamp-logo.png"/>
+            <p id="homeText">
+                Кваба е дигитално студио с фокус върху създаването на интерактивни уебсайтове и игри.
+            </p>
+            <a id="kvabaLink" target="_blank" href="http://www.kvaba.com">www.kvaba.com</a>
+
+        </section>
+        <section data-state="anim">
+            <p>Банери</p>
+
+            <div class="wireframe">
+
+                <div class="wfTop">
+                    <div class="wfBar">
+                        <div class="wfBarBtn1"></div>
+                        <div class="wfBarBtn2"></div>
+                        <div class="wfBarBtn3"></div>
+                    </div>
+
+
+                        <div class="wfTopLargeTxt" style="float: left"></div>
+                        <div class="wfTopSmallerTxt" style="float: left">
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                        </div>
+
+
+                        <div style="background-color: #1c1e20;float: right;" id="banner">
+
+                            <img onclick="playAnim()" class="replayBtn" src="assets/img/loop-128.png">
+
+                            <!--<video autoplay>-->
+                            <!--<source src="assets/banners/BANNER2.mp4" type="video/mp4">-->
+                            <!--Your browser does not support the video tag.-->
+                            <!--</video>-->
+                        </div>
+
+                </div>
+
+                <div class="wfBottom">
+                    <div class="backgroundDiv"></div>
+                    <div class="leftSide"></div>
+                    <div class="rightSide">
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section data-state="animInteractive">
+            <p>Интерактивни банери</p>
+            <div class="wireframe stretch">
+                <div class="wfTop interactive">
+                    <div class="wfBar ">
+                        <div class="wfBarBtn1"></div>
+                        <div class="wfBarBtn2"></div>
+                        <div class="wfBarBtn3"></div>
+                    </div>
+
+                    <div class="wfTopLargeTxt"></div>
+                    <div class="wfTopSmallerTxt">
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+                    <div id="interactiveBanner">
+                        <img style="z-index: 13;" onclick="playAnimInteractive()" class="replayBtn"
+                             src="assets/img/loop-128.png">
+                        <div style=" margin-left: 66%;background-color: #1b6185;width: 300px;height: 250px;"></div>
+                        <div class="clickAble" style=""></div>
+
+                        <!--<video autoplay>-->
+                        <!--<source src="assets/banners/BANNER2.mp4" type="video/mp4">-->
+                        <!--Your browser does not support the video tag.-->
+                        <!--</video>-->
+                    </div>
+
+                </div>
+                <div class="backgroundDiv"></div>
+                <div calss="wfBottom">
+                    <div class="leftSide"></div>
+                    <div class="rightSide">
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section>Браузър игри</section>
+        <section>Фейсбук приложения</section>
+        <section>Уеб страници</section>
+        <section>Мобилни приложения</section>
+        <section>Презентации</section>
+        <section>Контакти</section>
+
+    </div>
+</div>
+
+<!--End Slider-->
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/main3.js"></script>
+
+
+<script>
+    var animData = {
+        container: document.getElementById('banner'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: 'assets/animData/dataFrog2.json'
+    };
+    var animation = bodymovin.loadAnimation(animData);
+
+    var interactivBannerData = {
+        container: document.getElementById('interactiveBanner'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: 'assets/animData/banner3.json'
+    };
+    var interactivBannerAnim = bodymovin.loadAnimation(interactivBannerData);
+
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log(Reveal.getState());
+        if (Reveal.getState().indexh === 1) {
+            animation.stop();
+            setTimeout(playAnim, 500);
+        }
+        if (Reveal.getState().indexh === 2) {
+            interactivBannerAnim.stop();
+            setTimeout(playAnimInteractive, 500);
+
+        }
+    });
+
+    Reveal.addEventListener('anim', function () {
+        animation.stop();
+        setTimeout(playAnim, 500);
+        console.log(Reveal.getState().indexh);
+    });
+
+    Reveal.addEventListener('animInteractive', function () {
+        interactivBannerAnim.stop();
+        setTimeout(playAnimInteractive, 500);
+        console.log(Reveal.getState().indexh);
+    });
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+        overview: false,
+        help: false
+
+    });
+
+
+    function playAnim() {
+
+        animation.stop();
+
+        animation.play();
+
+    }
+    function playAnimInteractive() {
+        interactivBannerAnim.stop();
+        interactivBannerAnim.play();
+
+    }
+
+</script>
+</body>
+
+</html>
